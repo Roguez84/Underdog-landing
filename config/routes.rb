@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'landing#home'
   get 'landing/home'
   get 'landing/suscribe'
   get 'landing/howtobet'
