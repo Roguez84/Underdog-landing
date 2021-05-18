@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+    //  outline-style: dashed;
+    //  outline-width: ;
+    border-style: dashed;
+    border-width: thin;
+ }
+
+ .rog-w {
+    // max-width: 50%;
+ }
+
+ .rog-pic {
+     object-position: -20% 0;
+ }

@@ -4,50 +4,53 @@
     <title>Underdog Analytica</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('UnderdogLogo.png') %>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a99d83c902.js" crossorigin="anonymous"></script>
 
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path('UnderdogLogo.png') %>
   </head>
 
   <body>
 
 
-  <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <a class="navbar-brand" href="<%link_to root_path %>">
-      <%# <%= image_tag("UnderdogLogoText.png", height: '45', width: '45', class:"d-inline-block align-top" ) %>
-      <%= image_tag("UnderdogLogoText.png", style: 'height:69%;width:69%;', class:"d-inline-block align-top" ) %>
-    </a>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid rog-w text-left">
+        <a class="navbar-brand rog-pic" href="<%link_to root_path %>">
+          <%# <%= image_tag("UnderdogLogoText.png", height: '45', width: '45', class:"d-inline-block align-top" ) %>
+          <%= image_tag("UnderdogLogoText.png", style: 'height:69%;width:69%;', class:"d-inline-block align-top" ) %>
+        </a>
+      
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon icon-green"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon icon-green"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-primary" href="#">Suscribe <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="#">Football Betting 101</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="#">Bet Archive</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="#">Newsletters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="#">Contact</a>
-        </li>
-
-
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-primary" href="#">Suscribe <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Football Betting 101</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Bet Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Newsletters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
     <%= yield %>
@@ -67,12 +70,10 @@
 										</header>
 										<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
 										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+											<li><a href="#"> <i class="fab fa-twitter-square"></i></li>
+											<li><a href="#"> <i class="fab fa-facebook-square"></i></li>
+											<li><a href="#"> <i class="fab fa-instagram-square"></i></li>
+											<li><a href="#"> <i class="fab fa-linkedin"></i></li>
 										</ul>
 									</section>
 
@@ -88,16 +89,6 @@
 						</div>
 					</div>
 				</div>
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
